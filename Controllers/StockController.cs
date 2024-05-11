@@ -32,7 +32,7 @@ namespace api.Controllers
                 return NotFound();
             }
 
-            return Ok(stocks);
+            return Ok(stocks.ToStockDto());
         }
     }
 }
