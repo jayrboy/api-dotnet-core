@@ -98,3 +98,31 @@ Stocks
 ## Controllers
 
 StockController.cs
+
+## Data Transfer Object (DTOs)
+
+1. dto is that anything in programming
+
+- ตัวอย่าง: ผู้ใช้ป้อนข้อมูล
+  {
+  username: "taddysmith",
+  password: "IceSpice22"
+  }
+  -> ผ่าน DTO -> Response:
+  {
+  username: "teddy"
+  }
+- ตัวอย่าง: Request
+  Model
+  [Required]
+  public Password { get; set; }
+
+2. Create folder Dtos
+
+- Stock/StockDto.cs
+- Comment/CommentDto.cs
+
+3. Create folder Mappers
+
+- Stock/StockMappers.cs
+- Comment/CommentMappers.cs
