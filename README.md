@@ -94,3 +94,7 @@ Comments
 Stocks
 
 - Migrations (auto in VSCode)
+
+## Controllers
+
+StockController.cs
