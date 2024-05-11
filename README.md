@@ -65,10 +65,19 @@ dotnet watch run
 {
   ...
   "ConnectionStrings": {
-    "DefaultConnection": "DATA Source=BUMBIM\\SQLEXPRESS;Initial Catalog=Sharkfin;Integrated Security=True;Connect Timeout=30;Encrypt=True;TrustServerCertificate=True;ApplicationIntent=ReadWrite;MultiSubnetFailover=False;User ID=sa;Password=Password"
+    "DefaultConnection": "DATA Source=BUMBIM\\SQLEXPRESS;Initial Catalog=Sharkfin;Integrated Security=True;Connect Timeout=30;Encrypt=True;TrustServerCertificate=True;ApplicationIntent=ReadWrite;MultiSubnetFailover=False"
   }
   ...
 }
+```
+
+```c#
+<PropertyGroup>
+  ...
+  <InvariantGlobalization>false</InvariantGlobalization>
+  ...
+</PropertyGroup>
+
 ```
 
 ```sh
@@ -77,3 +86,11 @@ dotnet ef migrations add Init
 # Use when updated database _context
 dotnet ef database update
 ```
+
+5. SSMS Created tables (auto by ef database update)
+
+\_\_EFMigrationsHistory
+Comments
+Stocks
+
+- Migrations (auto in VSCode)
