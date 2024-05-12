@@ -126,3 +126,5 @@ StockController.cs
 
 - Stock/StockMappers.cs
 - Comment/CommentMappers.cs
+
+4. Used to StockController.cs
